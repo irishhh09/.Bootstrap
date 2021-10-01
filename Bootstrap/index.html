@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link 
+		href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+		rel="stylesheet" 
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+		crossorigin="anonymous"
+	/>
+	<link 
+	rel="stylesheet" 
+	href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+	/>
+	<link rel="stylesheet" href="style.css"/>
+	<title>bootstrap</title>
+</head>
+<body>
+	<!-- Navbar -->
+	<nav class="navbar navbar-expand-lg bg-dark navbar-dark py-2 fixed-top">
+		<div class="container">
+			<a href="#" class="navbar-brand">Information Systems</a>
+			
+			<button 
+			class="navbar-toggler"
+			type="button"
+			data-bs-toggle="collapse"
+			data-bs-target="#navmenu"
+		>
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		
+			<div class="collapse navbar-collapse" id="navmenu">
+				<ul class="navbar-nav ms-auto">
+					<li class="nav-item">
+						<a href="#about" class="nav-link">What is Information Systems?</a>
+					</li>
+					<li class="nav-item">
+						<a href="#questions" class="nav-link">Questions</a>
+					</li>
+					<li class="nav-item">
+						<a href="#instructors" class="nav-link">Instructors</a>
+					</li>
+				</ul>
+			</div>
+		
+		</div>
+		
+	</nav>
+
+	<!-- Showcase -->
+	<section class="bg-dark text-light p-5 text-center text-sm-start">
+		<div class="container">
+			<div class="d-sm-flex align-items-center justify-content-between">
+				<div>
+					<h1>Become a <span class="text-warning">
+						Data Analyst
+					</span></h1>
+					<p class="lead my-5">
+						Leverage the power of Data to make decisions.
+					</p>
+					<button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#join">Join us!</button>
+				</div>
+				<img class="img-fluid w-50 d-none d-sm-block" src="img/Analyst.png" alt="">
+			</div>
+		</div>
+	</section>
+
+	<!--Boxes -->
+	<section class="p-5">
+		<div class="container">
+			<div class="row text-center g-4">
+				<div class="col-md">
+					<div class="card bg-dark text-light">
+						<div class="card-body text-center">
+							<div class="h1 mb-3">
+								<i class="bi bi-laptop"></i>
+							</div>
+							<h3 class="card-title mb-3">Virtual</h3>
+							<p class="card-text">
+								Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat!
+							</p>
+							<a href="#" class="btn btn-primary">Read More!</a>
+						</div>
+					</div>					
+				</div>
+				<div class="col-md">
+					<div class="card bg-warning text-light">
+						<div class="card-body text-center">
+							<div class="h1 mb-3">
+								<i class="bi bi-people"></i>
+							</div>
+							<h3 class="card-title mb-3">In Person</h3>
+							<p class="card-text">
+								Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat!
+							</p>
+							<a href="#" class="btn btn-dark">Read More!</a>
+						</div>
+				</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+		<!--- LEARN -->
+		<section id="about" class="p-5">
+			<div class="container">
+				<div class="row align-items-center justify-content-between">
+					<div class="col-md">
+						<img src="img/basic.png" class="img-fluid"alt="">
+					</div>
+					<div class="col-md p-5">
+						<h2>Learn The Fundamentals</h2>
+						<p class="lead">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, tempora vero fugit dignissimos unde quas numquam officiis maiores fugiat!
+						</p>
+						<p>
+							Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur, voluptatibus? Magni voluptatum facere, officia ipsa saepe quidem harum quae exercitationem, totam deleniti a ullam veritatis!
+						</p>
+						<a href="#" class="btn btn-light mt-3">
+							<i class="bi bi-chevron-right"></i> Read More
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<section id="learn" class="p-5 bg-dark text-light">
+			<div class="container">
+				<div class="row align-items-center justify-content-between">
+					<div class="col-md p-5">
+						<h2>Understand Data Analysis</h2>
+						<p class="lead">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, tempora vero fugit dignissimos unde quas numquam officiis maiores fugiat!
+						</p>
+						<p>
+							Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur, voluptatibus? Magni voluptatum facere, officia ipsa saepe quidem harum quae exercitationem, totam deleniti a ullam veritatis!
+						</p>
+						<a href="#" class="btn btn-light mt-3">
+							<i class="bi bi-chevron-right"></i> Read More
+						</a>
+					</div>
+					<div class="col-md">
+						<img src="img/do.png" class="img-fluid"alt="">
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!--  Question Accordion -->
+		<section id="questions" class="p-5">
+			<div class="container">
+				<h2 class="text-center mb-4">Frequently Asked Questions</h2>
+				<div class="accordion accordion-flush" id="questions">
+					<!--  ITEM 1 -->
+					<div class="accordion-item">
+					  <h2 class="accordion-header" >
+						<button 
+							class="accordion-button collapsed" 
+							type="button" 
+							data-bs-toggle="collapse" 
+							data-bs-target="#question-one"
+						>
+						Is information systems and information technology the same?
+						</button>
+					  </h2>
+					<div 
+					  	id="question-one" 
+					  	class="accordion-collapse collapse" 
+						data-bs-parent="#questions"
+					>
+						<div class="accordion-body">The field of information systems works as the bridge between technology and people, whereas information technology focuses on helping them utilize and make sense of that system. The two disciplines are related, but have distinct sets of learnings and career paths.</div>
+					  </div>
+					</div>
+					<!--  ITEM 2  -->
+					<div class="accordion-item">
+					  <h2 class="accordion-header">
+						<button 
+							class="accordion-button collapsed" 
+							type="button" 
+							data-bs-toggle="collapse" 
+							data-bs-target="#question-two" 
+						>
+							Does information systems require coding?
+						</button>
+					  </h2>
+					  <div 
+					  	id="question-two" 
+						class="accordion-collapse collapse" 
+						data-bs-parent="#question-two"
+					>
+						<div class="accordion-body">
+							As opposed to computer science, you will probably not do a lot of coding or math work while working in computer information systems. Computer information systems coursework will involve more studying of the dynamics of businesses and people, so you'll see courses in project management, economics, and business.
+						</div>
+					  </div>
+					</div>
+					<!--  ITEM 3  -->
+					<div class="accordion-item">
+					  <h2 class="accordion-header">
+						<button 
+							class="accordion-button collapsed" 
+							type="button" 
+							data-bs-toggle="collapse" 
+							data-bs-target="#question-three"
+						> 
+						  What are the career opportunities in Information Systems
+							</button>
+						</h2>
+					 	<div 
+					  		id="question-three" 
+					  		class="accordion-collapse collapse" 
+					  		data-bs-parent="#questions"
+						>
+						<div class="accordion-body">
+							The field of information systems is expanding and there are career opportunities in business, government, non-profit organizations, and education. A major in information systems provides you with a wide range of career opportunities. Career choices range from very technical positions in network administration or programming to more communication-oriented employment in training or help desk support. A few of the possibilities such as Network Administration, Network Support Personnel, Systems Analyst, Project Manager, Consultants, Computer Programmers, Database Support Personnel, Computer Support Specialists and Web/Internet Support Specialists. 
+						</div>
+					  </div>
+					</div>
+				  </div>
+			</div>
+		</section>
+
+		<!-- Instructors  -->
+
+		<section id="instructors" class="p-5 bg-primary">
+			<div class="container">
+				<h2 class="text-center text-white">Our Instructors</h2>
+				<p class="lead text-center text-white mb-5">
+					Our instructors offers world-class learning.
+				</p>
+				<div class="row g-4">
+					<div class="col-md-6 col-lg-3">
+						<div class="card bg-light">
+							<div class="card-body text-center">
+								<img 
+									src="img/ecleo.jpg" 
+									class="rounded-circle mb-3"
+									alt=""
+								/>
+								<h3 class="title mb-3">Jerina Jean Ecleo</h3>
+								<p class="card-tetxt">
+									Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate?
+								</p>
+								<a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+								<a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+								<a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+								<a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-3">
+						<div class="card bg-light">
+							<div class="card-body text-center">
+								<img 
+									src="img/galido.jpg" 
+									class="rounded-circle mb-3"
+									alt=""
+								/>
+								<h3 class="title mb-3">Adrian Galido</h3>
+								<p class="card-tetxt">
+									Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate?
+								</p>
+								<a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+								<a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+								<a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+								<a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-3">
+						<div class="card bg-light">
+							<div class="card-body text-center">
+								<img 
+									src="img/LCV.jpg" 
+									class="rounded-circle mb-3"
+									alt=""
+								/>
+								<h3 class="title mb-3">Lemuel Clark Velasco</h3>
+								<p class="card-tetxt">
+									Lorem ipsum dolor sit amet consectetur.
+								</p>
+								<a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+								<a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+								<a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+								<a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-3">
+						<div class="card bg-light">
+							<div class="card-body text-center">
+								<img 
+									src="img/JB.jpg" 
+									class="rounded-circle mb-3"
+									alt=""
+								/>
+								<h3 class="title mb-3">Jerame Beloy</h3>
+								<p class="card-tetxt">
+									Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate?
+								</p>
+								<a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+								<a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+								<a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+								<a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!--   Contatct -->
+		<section class="p-5">
+			<div class="container">
+				<div class="row g-4">
+					<div class="col-md">
+						<h2 class="text-center mb4">Contact Info</h2>
+						<ul class="list-group list-group-flush lead">
+							<li class="list-group-item">
+							<span class="fw-bold">Address: </span> Andres Bonifacio Ave, Iligan City, 9200 Lanao del Norte
+							</li>
+							<li class="list-group-item">
+								<span class="fw-bold">Hours: </span> Monday-Friday, 8am-5pm
+							</li>
+							<li class="list-group-item">
+								<span class="fw-bold">Founded: </span> 12 July 1968
+							</li>
+							<li class="list-group-item">
+								<span class="fw-bold">Motto: </span> Quality Education for a better Mindanao
+								</li>
+						</ul>
+					</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Footer  -->
+
+		<footer class="p-5 bg-dark text-white text-center position-relative">
+			<div class="container">
+				<p class="lead">Copyright © 2021 Irish Mae Hambre</p>
+
+				<a href="#" class="position-absolute bottom-0 end-0 p-5">
+					<i class="bi bi-arrow-up-circle h1"></i>
+				</a>
+			</div>
+		</footer>
+
+<!-- Modal -->
+<div class="modal fade" id="join" tabindex="-1" aria-labelledby="joinLabel" aria-hidden="true">
+	<div class="modal-dialog">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+		  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		</div>
+		<div class="modal-body">
+		  <p class="lead">Fill up this form be one of us!</p>
+		  <form>
+			  <div class="mb-3">
+				  <label for="first-name" class="col-form-label">
+					  First Name:
+				  </label>
+				  <input type="text" class="form-control" id="first-name">
+			  </div>
+			  <div class="mb-3">
+				<label for="last-name" class="col-form-label">
+					Last Name:
+				</label>
+				<input type="text" class="form-control" id="last-name">
+			</div>
+			<div class="mb-3">
+				<label for="email" class="col-form-label">
+					Email:
+				</label>
+				<input type="text" class="form-control" id="email">
+			</div>
+			<div class="mb-3">
+				<label for="phone" class="col-form-label">
+					Phone:
+				</label>
+				<input type="text" class="form-control" id="phoner">
+			</div>
+		  </form>
+		</div>
+		<div class="modal-footer">
+		  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+		  <button type="button" class="btn btn-primary">Submit</button>
+		</div>
+	  </div>
+	</div>
+  </div>
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
